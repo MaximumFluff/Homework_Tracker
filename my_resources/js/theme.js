@@ -1,4 +1,4 @@
-// These functions change the color scheme, then update the currentTheme counter to keep track of the current theme
+// These functions change the color scheme, then update the current Theme counter to keep track of the current theme
 function changeToWhite()
 {
     $("p").css({"color": "black"});

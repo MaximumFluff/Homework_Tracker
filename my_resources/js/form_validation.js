@@ -1,3 +1,4 @@
+// Check that required forms are filled. throw alert if not filled.
 function formValidation()
 {
     var checkTitleField = document.getElementById("titleField").value;
