@@ -1,0 +1,30 @@
+input
+{
+    display: block;
+}
+textarea {
+    width: 250px;
+    height: 100px;
+}
+#dateField
+{
+    width: 280px;
+}
+#arrayOutput
+{
+    width: 300px;
+    height: 360px;
+    overflow: scroll;
+}
+.jumbotron
+{
+    background-color: transparent !important; 
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto Mono', monospace;
+}
+p, div
+{
+    font-family: 'Roboto Mono', monospace;
+}

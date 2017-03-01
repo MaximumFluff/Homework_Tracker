@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="my_resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="external_resources/css/bootstrap.css">
+    </head>
+    <body onload="startup()">
+        <div class="jumbotron text-center">
+            <button type="button" onclick="changeToWhite()" class="btn btn-sm btn-primary">Black on White</button>
+            <button type="button" onclick="changeToBlack()" class="btn btn-sm btn-primary">White on Black</button>
+            <button type="button" onclick="changeToGray()" class="btn btn-sm btn-primary">Orange on Gray</button>
+            <h1 class="font">Homework To-Do List</h1>
+            <h3 class="font">Developed during November of 2016</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <input type="text" size="32" id="titleField" placeholder="Input title" />
+                        <br />
+                        <textarea row="32" col="50" id="descriptionField" placeholder="Input description here"></textarea>
+                        <br />
+                        <br />
+                        <input type="text" size="32" id="dateField" placeholder="Input due date (DD/MM/YYYY)"/>
+                        <br />
+                        <p class="font">Optional Field:</p>
+                        <input type="text" size="32" id="hourField" placeholder="Input hour due (e.g HH:MM:SS)"/>
+                        <br />
+                        <button type="button" class="btn btn-sm btn-primary" onclick="formValidation()">Submit</button>
+                        <button type="button" onclick="save()" class="btn btn-sm btn-primary">Save to LocalStorage</button>
+                        <button type="button" onclick="wipe()" class="btn btn-sm btn-danger">Delete LocalStorage</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div id="arrayOutput"></div>
+                </div> 
+            </div>     
+        </div>
+        <script src="my_resources/js/script.js"></script>
+        <script src="my_resources/js/theme.js"></script>
+        <script src="my_resources/js/form_validation.js"></script>
+        <script src="external_resources/js/jquery-3.1.1.min.js"></script>
+    </body>
+</html>
